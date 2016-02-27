@@ -1,0 +1,96 @@
+
+Rahul@Rahulhebbar MINGW64 ~
+$ cd desktop
+
+Rahul@Rahulhebbar MINGW64 ~/desktop
+$ git clone https://github.com/rahulhebbar/rahul.git
+Cloning into 'rahul'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+Rahul@Rahulhebbar MINGW64 ~/desktop
+$ git add rahul
+fatal: Not a git repository (or any of the parent directories): .git
+
+Rahul@Rahulhebbar MINGW64 ~/desktop
+$ cd rahul
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git add .
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git commit -m "text file added"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <Rahul@Rahulhebbar.(none)>) not allowed
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git config --global user.name "rahulhebbar"
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git config --global user.email "rahulhebbar1996@gmail.com"
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git commit
+Vim: Error reading input, exiting...
+Vim: Finished.
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git commit "text file is added"
+error: pathspec 'text file is added' did not match any file(s) known to git.
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git commit -m "text file is added"
+[master dd3a04a] text file is added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 xyz.txt
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git push origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/rahulhebbar/rahul.git/'
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git push origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/rahulhebbar/rahul.git/'
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git push origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/rahulhebbar/rahul.git/'
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/rahulhebbar/rahul.git
+   e9d5243..dd3a04a  master -> master
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git rm xyz.txt
+rm 'xyz.txt'
+
+Rahul@Rahulhebbar MINGW64 ~/desktop/rahul (master)
+$ git
